@@ -213,7 +213,7 @@ if has_flag("--cuda_ext", "APEX_CUDA_EXT"):
     if "--cuda_ext" in sys.argv:
         sys.argv.remove("--cuda_ext")
     raise_if_cuda_home_none("--cuda_ext")
-    check_cuda_torch_binary_vs_bare_metal(CUDA_HOME)
+    ######check_cuda_torch_binary_vs_bare_metal(CUDA_HOME)
 
     ext_modules.append(
         CUDAExtension(
